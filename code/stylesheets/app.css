@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+button {
+  border: 0;
+  outline: 0;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  line-height: 2;
+  font-size: 3em;
+  color: #ba123b;
+}
+
+p {
+  text-align: center;
+}
+
+.winner-state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 2;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.3em;
+}
+
+.winner-state img {
+  max-width: 250px;
+}
+
+.game-board {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 30px auto;
+}
+
+.game-piece {
+  font-family: 'Permanent Marker', cursive;
+  width: 33.33333%;
+  height: 33.33333%;
+  float: left;
+  background-color: white;
+  font-size: 5em;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.current-player-X .game-piece:not(.claimed):hover:before,
+.claimed-by-X.game-piece:before {
+  content: 'X';
+}
+
+.current-player-O .game-piece:not(.claimed):hover:before,
+.claimed-by-O.game-piece:before {
+  content: 'O';
+}
+
+.game-piece:not(.claimed):hover:before {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+
+.game-piece:nth-child(3n+1),
+.game-piece:nth-child(3n+2) {
+  border-right: 10px solid #333;
+}
+
+.game-piece:nth-child(-n+6) {
+  border-bottom: 10px solid #333;
+}
