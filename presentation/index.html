@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Intro to Javascript, HTML, &amp; CSS</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Intro to Javascript, HTML, &amp; CSS</h1>
+					<p>Presented By Derek Fons</p>
+				</section>
+				<section>
+					<h1>Introductions</h1>
+				</section>
+				<section>
+					<h1>Learning Objectives</h1>
+					<ul>
+						<li class="fragment">Have a idea of what <strong>HTML</strong> is.</li>
+						<li class="fragment">Be able to write few <strong>HTML</strong> tags.</li>
+						<li class="fragment">Know what role <strong>CSS</strong> plays in building web sites/apps.</li>
+						<li class="fragment">Be able to make some style changes with <strong>CSS</strong>.</li>
+						<li class="fragment">Know what <strong>Javascript</strong> is at a highlevel.</li>
+						<li class="fragment">Be comfortable reading and changing basic <strong>Javascript</strong>.</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Tic Tac Toe</h1>
+					<img src="images/tictactoe.gif" class="fragment" />
+				</section>
+				<section>
+					<img src="images/screenshot.png" class="plain" width="350" />
+				</section>
+				<section>
+					<h1>Presentation, Code &amp; Links</h1>
+					<img src="images/GitHub-Mark.png" width="200" class="plain" />
+					<p style="font-size: 1.5em"><a href="https://github.com/farfromrest/tic-tac-toe">https://github.com/farfromrest/tic-tac-toe</a></p>
+				</section>
+				<section>
+					<img src="images/codepen.png" class="plain" />
+				</section>
+				<section>
+					<img src="images/codepen-screenshot.png" class="plain" />
+				</section>
+				<section>
+					<h1>HTML</h1>
+				</section>
+				<section>
+					<h1>HTML Tags</h1>
+					<pre><code class="html" data-trim contenteditable>
+&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+
+&lt;p&gt;paragraph text&lt;/p&gt;
+					</code></pre>
+				</section>
+				<section>
+					<h1>HTML Tags with Attributes</h1>
+					<pre><code class="html" data-trim contenteditable>
+&lt;button class="game-piece"&gt;&lt;/button&gt;
+
+&lt;img src="images/winner.gif" /&gt;
+					</code></pre>
+				</section>
+				<section>
+					<h1>Demo</h1>
+				</section>
+				<section>
+					<h1>Your Turn!</h1>
+					<ol>
+						<li class="fragment">Add a <code>&lt;h1&gt;</code> tag to add a header to our game.</li>
+						<li class="fragment">Add a <code>&lt;p&gt;</code> tag under our header for a welcome message.</li>
+					</ol>
+					<p class="fragment">Open up TicTacToe - HTML - Part 1</p>
+				</section>
+				<section>
+					<h1>CSS</h1>
+				</section>
+				<section>
+					<h1>CSS Selectors</h1>
+					<pre><code class="css" data-trim contenteditable>
+h1 {}
+
+.game-board {}
+
+.winner-state img {}
+					</code></pre>
+				</section>
+				<section>
+					<h1>CSS Properties</h1>
+					<pre><code class="css" data-trim contenteditable>
+h1 {
+	font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #ba123b;
+  font-size: 3em;
+  line-height: 2;
+}
+
+					</code></pre>
+				</section>
+				<section>
+					<h1>Demo</h1>
+				</section>
+				<section>
+					<h1>Your Turn!</h1>
+					<ol>
+						<li class="fragment">Give the <code>&lt;h1&gt;</code> tag some style. Color, size, ect.</li>
+						<li class="fragment">Using Google Fonts find a custom font to use.</li>
+					</ol>
+					<p class="fragment">Open up TicTacToe - CSS - Part 2</p>
+				</section>
+				<section>
+					<h1>Javascript</h1>
+				</section>
+				<section>
+					<h2>Variables &amp; Data Types</h2>
+					<pre><code class="javascript" data-trim contenteditable>
+var currentPlayer = 'X'; // String
+var position = 1; // Number
+var winner = null; // Null
+var plays = ['X', 'O']; // Array
+					</code></pre>
+				</section>
+				<section>
+					<h2>Arrays</h2>
+					<pre><code class="javascript" data-trim contenteditable>
+					var plays = ['X', 'O', 'X', 'O', 'X', 'O', 'X', 'O', 'O'];
+					</code></pre>
+				</section>
+				<section>
+					<h2>Array Indexes</h2>
+					<img src="images/indexes.png" width="200">
+					<pre class="fragment"><code class="javascript" data-trim contenteditable>
+var firstPosition = plays[0];
+var secondPosition = plays[1];
+var thirdPosition = plays[2];
+					</code></pre>
+				</section>
+				<section>
+					<h2>Conditionals</h2>
+					<pre class="fragment"><code class="javascript" data-trim contenteditable>
+if (true) {
+  // do this
+} else {
+  // do this other thing
+}			</code></pre>
+				</section>
+				<section>
+					<h2>Complex Conditionals</h2>
+					<pre class="fragment"><code class="javascript" data-trim contenteditable>
+if (currentPlayer === 'X') {
+  // Hello player X
+} else if (currentPlayer === 'O') {
+  // Oh, hi player O
+} else {
+	// I don't know who you are!
+}
+
+if (currentPlayer === 'X' && winner === 'X') {
+  // Hello X, you are the winner, congrats!
+}			</code></pre>
+				</section>
+				<section>
+					<h1>Demo</h1>
+				</section>
+				<section>
+					<h1>Your Turn!</h1>
+					<ol>
+						<li class="fragment">Fix conditional switching player.</li>
+						<li class="fragment">Add conditional for last column win.</li>
+					</ol>
+					<p class="fragment">Open up TicTacToe - JS - Part 3</p>
+				</section>
+				<section>
+					<h1>Review</h1>
+					<ul>
+						<li class="fragment">Have a idea of what <strong>HTML</strong> is.</li>
+						<li class="fragment">Be able to write few <strong>HTML</strong> tags.</li>
+						<li class="fragment">Know what role <strong>CSS</strong> plays in building web sites/apps.</li>
+						<li class="fragment">Be able to give things color and make some style changes with <strong>CSS</strong>.</li>
+						<li class="fragment">Know what <strong>Javascript</strong> is at a highlevel.</li>
+						<li class="fragment">Be comfortable reading and changing basic <strong>Javascript</strong>.</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Questions?</h1>
+				</section>
+				<section>
+					<img src="images/sucking.gif">
+				</section>
+				<section>
+					<h1>Thank you!</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
