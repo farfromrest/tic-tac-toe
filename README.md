@@ -3,7 +3,7 @@
 ## Code Pens
  - [TicTacToe - HTML - Part 1](http://codepen.io/farfromrest/pen/VjNgZq/?editors=1000)
  - [TicTacToe - CSS - Part 2](http://codepen.io/farfromrest/pen/pbXgdm/?editors=0100)
- - [TicTacToe - JS - Part 3](http://codepen.io/farfromrest/pen/VjNgZq/?editors=0010)
+ - [TicTacToe - JS - Part 3](http://codepen.io/farfromrest/pen/ZOdQvY/?editors=0010)
 
 ## Resources
 - [MDN HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
